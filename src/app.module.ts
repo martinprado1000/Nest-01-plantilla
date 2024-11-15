@@ -7,7 +7,7 @@ import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://localhost:27017/06-plantilla'),  // Importamos La base y le ponemos como nombre nest-00
+    MongooseModule.forRoot('mongodb://localhost:27017/Nest-01-plantilla'),  // Importamos La base y le ponemos como nombre nest-00
     UsersModule,
     AuthModule
     //TaskModule,

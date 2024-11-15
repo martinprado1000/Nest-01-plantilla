@@ -5,7 +5,7 @@ import { ValidationPipe } from "@nestjs/common";
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
-  // app.setGlobalPrefix('api')  // A todas las rutas le agrega este prefijo antes
+  // app.setGlobalPrefix('api')  // A todas las rutas le agrega este prefijo antes.
 
   app.useGlobalPipes(new ValidationPipe({
     whitelist:true,  // Esta linea lo que hace es que si me mandan datos de mas que no los reciba.
